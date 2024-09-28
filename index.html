@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>taller-css</title>
+</head>
+<style>
+    p{color: #333;}
+    #contenedor{
+        background-color:  #f0f0f0;
+    }
+    .destacado{
+        font-weight: bold;
+        color: blue;
+    }
+    h1{
+        font-size: 24px;
+    }
+    ul>li{
+        color:green}
+    ul >li :first{
+    font-weight: bold;
+    }
+
+    ul > li:last-child{
+     font-style: italic;
+    }
+    .text{color: yellow;}
+    span{
+        margin-top: 10px;
+    }
+    .caja{
+        height: 200px;
+        width: 200px;
+        border: solid 2px black;
+        padding: 20px;
+        margin: 20px;
+        background-color: (30px 30px 30px);
+        box-shadow: 50px 40px 30px 10px;
+        border-radius: 10px;
+    }
+    .galeria{
+        display: flex;
+        flex-wrap: wrap;
+        flex: 10px;
+    }
+    @media (max-width: 768px) {}
+    .galeria{
+        grid-template-columns: repeat(1, 1fr);
+    }
+        
+    
+</style>
+<body>
+    <h1 >Título Principal </h1 >
+        <p class =" destacado ">Párrafo destacado </p>
+        <p>Párrafo normal </p>
+        <div id="contenedor ">
+        <p>Párrafo dentro de un div </p>
+        </div >
+
+        <ul >
+            <li > Primer elemento </li >
+            <li class="text"> Segundo elemento </li >
+            <li > Tercer elemento </li >
+            </ul >
+            <p><span >Texto </span> con <span >múltiples </span> spans </p>
+
+            <div class="caja">
+            </div>
+
+            <div class="galeria">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP2PprPEl5AG6PXP60ZIvOSQOvQll4GPUbtg&s" alt="" width="200" height="170">
+                <img src="https://bylmo.com/cdn/shop/products/cocina-integral-asti-blanco-180-cm-con-meson-derecho_BTL4302-3_800x.jpg?v=1676665627" alt=""width="200" height="170">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIkWGAq6ZfBqOFFCZ1uu-Avcdv4imp4TJsbA&s" alt="" width="200" height="170">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZnUW5QDLDq0G7_l2rVTeBaB9OJea96bbeJQ&s" width="200" height="170">
+                <img src="https://mx.habcdn.com/photos/project/medium/apantallante-cocina-moderna-521930.jpg" alt=""width="200" height="170">
+            </div>
+        
+</body>
+</html>
